@@ -7,6 +7,4 @@
 <%= f.submit %>
 <% end %>
 <h2> Comments </h2>
-<% @article.comments.each do |comment| %>
-<p><%= comment.body %></p>
-<% end %>
+<%= render @article.comments %>
